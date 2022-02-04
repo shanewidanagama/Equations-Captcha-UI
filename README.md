@@ -1,6 +1,8 @@
-# EquationsCaptchaUi
+# EquationsCaptchaUi Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+Renders a page with a login button that when clicked, asks users to solve an equation. Users can attempt to solve Captcha equations a maximum of 5 times before being told to try again later.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4, and the DB was generated using JSON Server version 0.17.0 (https://github.com/typicode/json-server).
 
 ## Development server
 
