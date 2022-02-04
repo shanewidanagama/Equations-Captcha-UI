@@ -1,0 +1,24 @@
+<div
+  class="position-absolute top-50 start-50 translate-middle shadow-sm p-5 rounded-3 border"
+>
+  <h2>Login</h2>
+  <br />
+  <app-button [text]="'Submit'" (click)="login()"></app-button>
+  <div *ngIf="showCaptchaQ">
+    <br />
+    <p>{{question}}</p>
+    <select class="captchaOptions form-select" (change)="testCaptcha()">
+      <option selected value="">Select One</option>
+      <option *ngFor="let option of options" [value]="option"
+        >{{option}}</option
+      >
+    </select>
+    <br />
+    <div
+      *ngIf="isCaptchaIncorrect"
+      class="bg-danger text-white rounded-1 text-center"
+    >
+      Wrong Answer. Try again.
+    </div>
+  </div>
+</div>
